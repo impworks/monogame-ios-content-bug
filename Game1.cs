@@ -5,11 +5,13 @@ namespace IosTest
 {
     public class Game1 : Game
     {
+        private GraphicsDeviceManager _graphicsDeviceManager;
         private SpriteBatch _spriteBatch;
         private Texture2D _alien;
 
         public Game1()
         {
+            _graphicsDeviceManager = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
         }
